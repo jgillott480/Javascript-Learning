@@ -108,11 +108,31 @@ function willBuyDrink(isHotOutside, moneyInPocket) {
 
 console.log("Will buy drink?", willBuyDrink(true, 12.00));
 
-// Question 13. Calculate the area of a rectangle
-// This function takes the length and width of a rectangle as parameters and returns its area.
-function calculateRectangleArea(length, width) {
-    return length * width;
+// Question 13. Create a function that solves a problem.
+// I created it because sometimes picking a spot when you have so many to choose from can be 
+// a challenge. So I'll let this function decide and solve my problem of where to go.
+function pickSpotForCamping() {
+    const spots = [
+        "Kalaloch",
+        "Falls Creek",
+        "Mount Skokomish",
+        "Glen Ayr Resort",
+        "Gilgal Oasis",
+        "Point Hudson",
+        "Crescent Beach",
+        "Hoh Rainforest",
+        "Sol Duc Hot Springs",
+        "Fairholme"
+    ];
+
+    // Generates a random index to pick a camp spot.
+    const randomIndex = Math.floor(Math.random() * spots.length);
+
+    return spots[randomIndex];
 }
+
+const selectedSpot = pickSpotForCamping();
+console.log("You should camp at:", selectedSpot);
 
 console.log("Area of rectangle:", calculateRectangleArea(5, 10));
 
