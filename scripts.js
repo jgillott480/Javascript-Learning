@@ -20,6 +20,8 @@ for (let i = 0; i < ages.length; i++) {
 let averageAge = sum / ages.length;
 console.log("Average age:", averageAge);
 
+
+
     // Question 2. Create an array called names
     let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
  names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
@@ -125,7 +127,7 @@ function pickSpotForCamping() {
         "Fairholme"
     ];
 
-    // Generates a random index to pick a camp spot.
+    // randomize index to pick a camp spot.
     const randomIndex = Math.floor(Math.random() * spots.length);
 
     return spots[randomIndex];
